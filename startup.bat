@@ -1,1 +1,1 @@
-java -jar build/libs/gs-spring-boot-0.1.0.jar
+java -jar target/Spring-boot-training-0.1.0.jar

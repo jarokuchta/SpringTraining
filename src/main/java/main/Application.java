@@ -1,19 +1,18 @@
-package controllers;
+package main;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 
-@RestController
-public class MainController {
+@SpringBootApplication
+public class Application {
 
-    @RequestMapping("/ ")
-    public String index(){
-           return "main controller";
+    public static void main(String[] args){
+        SpringApplication.run(Application.class, args);
     }
 
     @Bean
